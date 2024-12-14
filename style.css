@@ -115,7 +115,8 @@ button#demo-btn:hover {
 .profile ul li:hover {
     color: #FFD700; 
 }
+
+/* Hidden class to hide elements initially */
 .hidden {
     display: none;
 }
-
