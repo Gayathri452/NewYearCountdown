@@ -115,3 +115,7 @@ button#demo-btn:hover {
 .profile ul li:hover {
     color: #FFD700; 
 }
+.hidden {
+    display: none;
+}
+
