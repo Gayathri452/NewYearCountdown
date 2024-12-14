@@ -15,9 +15,7 @@ const countdown = () => {
     document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
     document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
 };
-// Show Demo Message
 document.getElementById("demo-btn").addEventListener("click", () => {
-    document.getElementById("demo-message").classList.toggle("hidden");
+    document.getElementById("demo-message").style.display = "block";
 });
-// Update the countdown every second
 setInterval(countdown, 1000);
