@@ -1,7 +1,9 @@
+// Countdown Timer
 const countdown = () => {
     const newYear = new Date("January 1, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const difference = newYear - now;
+
     if (difference <= 0) {
         document.getElementById("countdown").textContent = "🎆 Happy New Year! 🎆";
         return;
@@ -15,9 +17,12 @@ const countdown = () => {
     document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
     document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
 };
-// Show Demo Message
+// Update button text when clicked
 document.getElementById("demo-btn").addEventListener("click", () => {
-    document.getElementById("demo-message").classList.toggle("hidden");
+    const button = document.getElementById("demo-btn");
+    button.textContent = "🎉 Happy New Year! 🎉";
+    button.style.backgroundColor = "#FFD700"; 
+    button.style.color = "#000";  
 });
 // Update the countdown every second
 setInterval(countdown, 1000);
